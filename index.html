@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3-HTML</title>
+    <style>
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        label {
+
+            margin-right: 50px;
+            margin-bottom: 10px;
+        }
+
+        label label {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 150px;
+        }
+
+        .code {
+            display: flex;
+        }
+
+        .code div label {
+            margin: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            label {
+                flex-basis: 100%;
+
+            }
+
+            .code {
+                display: inline;
+            }
+
+            .code div {
+                display: flex;
+            }
+
+            .code div label {
+                flex-basis: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <div>
+            <!--First name-->
+            <label>
+                First Name:
+                <br>
+                <input type="text" name="first_name" id="first_name" >
+            </label>
+            <!--last name-->
+            <label>
+                Last Name:
+                <br>
+                <input type="text" name="last_name" id="last_name">
+
+            </label>
+        </div>
+        <div>
+            <!--Email-->
+            <label>
+                Email:
+                <br>
+                <input type="email" name="email" id="email">
+            </label>
+            <!--Contact Number-->
+            <label>
+                Contact Number:
+                <br>
+                <input type="tel" name="contact_no" id="contact_no">
+
+            </label>
+        </div>
+        <div>
+            <!--User name-->
+            <label>
+                Username:
+                <br>
+                <input type="text" name="username" id="username">
+            </label>
+            <!--Password-->
+            <label>
+                Password:
+                <br>
+                <input type="password" name="password" id="password">
+
+            </label>
+        </div>
+        <div>
+            <!--Address-->
+            <label>
+                Address:
+                <br>
+                <textarea name="address" id="address" cols="20" rows="2"></textarea>
+            </label>
+            <!--Gender-->
+            <label>
+                Gender:
+                <br>
+
+                <input style="margin-top: 10px;" type="radio" name="gender" id="male" value="MALE">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="FEMALE">
+                <label for="female">Female</label>
+
+            </label>
+        </div>
+
+        <div>
+            <!--Qualification-->
+            <label style="margin-right: 70px;">
+                Qualification:
+                <br>
+                <select name="qualification" id="qualification">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Higher Secondary">Higher Secondary</option>
+
+                </select>
+            </label>
+            <!--Experience-->
+            <label>
+                Experience:
+                <br>
+                <select name="experience" id="experience">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="0">0 Years</option>
+                    <option value="1">1 Years</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                    <option value="4">4 Years</option>
+                    <option value="5">5 Years</option>
+
+
+                </select>
+            </label>
+
+        </div>
+        <br>
+        <div>
+            <!--Coding Languages-->
+            
+            <label class="code" for="code">
+                Coding Languages:
+                <div>
+                    <input type="checkbox" name="coding_language" id="c/c++" value="C/C++">
+                    <label for="c/c++">C/C++</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="coding_language" id="java" value="Java">
+                    <label for="java">Java</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="coding_language" id="c#" value="C#">
+                    <label for="c#">C#</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="coding_language" id="php" value="PHP">
+                    <label for="php">PHP</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="coding_language" id="python" value="Python">
+                    <label for="python">Python</label>
+                </div>
+            </label>
+
+
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
